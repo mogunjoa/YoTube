@@ -45,6 +45,7 @@ dependencies {
 
     implementation(libs.gson)
     implementation(libs.glide)
+    implementation(libs.exoplayer)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
