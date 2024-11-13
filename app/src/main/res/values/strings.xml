@@ -4,4 +4,7 @@
     <string name="header_sub_title_video_info">조회수 %s ㆍ %s</string>
     <string name="home">홈</string>
     <string name="storage">보관함</string>
+    <string name="play_pause_a11y">재생/일시정지</string>
+    <string name="rewind_a11y">뒤로 감기</string>
+    <string name="forward_a11y">앞으로 감기</string>
 </resources>
