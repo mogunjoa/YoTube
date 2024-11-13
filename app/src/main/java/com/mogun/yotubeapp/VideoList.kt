@@ -3,10 +3,10 @@ package com.mogun.yotubeapp
 import com.google.gson.annotations.SerializedName
 
 data class VideoList(
-    val videos: List<VideoItem>
+    val videos: List<VideoEntity>
 )
 
-data class VideoItem(
+data class VideoEntity(
     @SerializedName("id")
     val id: String,
     @SerializedName("title")
