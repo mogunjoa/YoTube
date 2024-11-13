@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">YotubeApp</string>
+    <string name="sub_title_video_info">%s ㆍ 조회수 %s ㆍ %s</string>
 </resources>
