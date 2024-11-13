@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.mogun.yotubeapp.ExoPlayerMotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -59,11 +59,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.exoplayer2.ui.PlayerView
+    <androidx.media3.ui.PlayerView
         android:id="@+id/playerView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@color/black"
+        app:resize_mode="fixed_width"
         app:layout_constraintBottom_toBottomOf="@+id/videoPlayerContainer"
         app:layout_constraintEnd_toEndOf="@+id/videoPlayerContainer"
         app:layout_constraintStart_toStartOf="@+id/videoPlayerContainer"
@@ -133,4 +134,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bottom_nav_menu" />
 
-</androidx.constraintlayout.motion.widget.MotionLayout>
+</com.mogun.yotubeapp.ExoPlayerMotionLayout>

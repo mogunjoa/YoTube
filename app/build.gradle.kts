@@ -45,7 +45,11 @@ dependencies {
 
     implementation(libs.gson)
     implementation(libs.glide)
-    implementation(libs.exoplayer)
+
+    // ExoPlayer 대신 Media3 라이브러리 추가
+    implementation (libs.androidx.media3.exoplayer)
+    implementation (libs.androidx.media3.ui) // UI PlayerView 사용 시 필요
+    implementation (libs.androidx.media3.common) // 공통 구성 요소
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
