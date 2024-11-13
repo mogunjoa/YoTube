@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.mogun.yotubeapp.databinding.ItemVideoBinding
 
-class VideoAdapter(private val context: Context): ListAdapter<VideoItem, VideoAdapter.ViewHolder>(diffUtil) {
+class VideoAdapter(private val context: Context, private val onClick: (VideoItem) -> Unit): ListAdapter<VideoItem, VideoAdapter.ViewHolder>(diffUtil) {
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
@@ -49,6 +49,10 @@ class VideoAdapter(private val context: Context): ListAdapter<VideoItem, VideoAd
                     .load(item.channelThumb)
                     .circleCrop()
                     .into(this)
+            }
+
+            binding.root.setOnClickListener {
+                onClick.invoke(item)
             }
         }
     }
